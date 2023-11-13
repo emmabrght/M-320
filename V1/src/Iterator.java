@@ -1,5 +1,4 @@
-public interface Iterator {
-    public void next();
+public interface Iterator{
     public void remove();
     public boolean hasNext();
 }
