@@ -10,8 +10,7 @@ public class Main {
         do {
             System.out.println("Menü:");
             System.out.println("1. Spieler erstellen");
-            System.out.println("2. Spieler zur Mannschaft hinzufügen");
-            System.out.println("3. Spiel starten");
+            System.out.println("2. Spiel starten");
             System.out.println("0. Beenden");
             System.out.print("Auswahl: ");
             choice = scanner.nextInt();
@@ -22,13 +21,6 @@ public class Main {
                     mannschaft.spielerHinzufuegen(spieler);
                     break;
                 case 2:
-                    System.out.println("Spieler zur Mannschaft hinzufügen:");
-                    System.out.print("Name des Spielers: ");
-                    String spielerName = scanner.next();
-                    Spieler existierenderSpieler = new Spieler(spielerName);
-                    mannschaft.spielerHinzufuegen(existierenderSpieler);
-                    break;
-                case 3:
                         spielStarten(mannschaft);
                     break;
             }
